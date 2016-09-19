@@ -27,23 +27,23 @@ This proof of concept logs into a Gmail account, enters the inbox, starting at t
 
 ### Milestones (and to-do list)
 
-1. ~~Flow chart~~
-2. ~~Proof of concept~~
-3. Obfuscate bot's sent email meta data
-4. Fine tune SMTP email's appearence, make it look legitimate
-5. Compose email that is in response to the previous email (as part of a thread, not a new email)
-6. Loop through mailbox until nothing to respond to or sort, then print report
-7. Create and query database of email spam messages and appropriatly gullible responses
-8. Success and failure rate tracking via the database
-9. Multiple personalities and their own set of responses
-10. Learn new conversations and responses
-11. Choose the best conversations based on previous conversation situations
-12. Attach images to emails if requested
-13. Have VoIP conversations with spammers with pre-recorded audio clips
-14. Automatically DDoS links found inside email spam messages
-15. Create a software tailored for mailservers (Linux, considering it powers most of the Internet?) or email clients (Gmail gadget? Thunderbird plugin? Outlook Ad-in?)
-16. Test software
-17. Collect statistics
+- [x] ~~Flow chart~~
+- [x] ~~Proof of concept~~
+- [] Obfuscate bot's sent email meta data
+- [] Fine tune SMTP email's appearence, make it look legitimate
+- [] Compose email that is in response to the previous email (as part of a thread, not a new email)
+- [] Loop through mailbox until nothing to respond to or sort, then print report
+- [] Create and query database of email spam messages and appropriatly gullible responses
+- [] Success and failure rate tracking via the database
+- [] Multiple personalities and their own set of responses
+- [] Learn new conversations and responses
+- [] Choose the best conversations based on previous conversation situations
+- [] Attach images to emails if requested
+- [] Have VoIP conversations with spammers with pre-recorded audio clips
+- [] Automatically DDoS links found inside email spam messages
+- [] Create a software tailored for mailservers (Linux, considering it powers most of the Internet?) or email clients (Gmail gadget? Thunderbird plugin? Outlook Ad-in?)
+- [] Test software
+- [] Collect statistics
 
 ### Why is this open source?
 
