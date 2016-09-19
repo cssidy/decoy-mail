@@ -5,6 +5,10 @@
 
 ### What is the solution?
 
+### Video demonstration
+
+### Program flow chart
+
 ### Why is this open source?
 
 Attempting to fund this sort of project would prolong its completion because I do not have the resources to build a company to develop it. And, after the hypothetical company is formed, there are no guarantees that I'd make my investment back. So, instead of being selfish and secretive with my ideas and proof-of-concept, I feel it's more beneficial to release it into the wild and see what happens.
