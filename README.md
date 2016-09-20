@@ -27,11 +27,11 @@ This proof of concept logs into a Gmail account, enters the inbox, starting at t
 
 Quick tour of the files:
 
-[![ScreenShot](http://s14.postimg.org/f3l5klii9/Screenshot_from_2016_09_19_21_30_37.png)](http://postimg.org/image/p0w6dnq3x/)](https://youtu.be/HqinRVduHdA)
+[![ScreenShot](http://s14.postimg.org/f3l5klii9/Screenshot_from_2016_09_19_21_30_37.png)][(http://postimg.org/image/p0w6dnq3x/)](https://youtu.be/HqinRVduHdA)
 
 Fetching, matching, and responding to an email:
 
-[(http://s13.postimg.org/8yuacjdiv/Screenshot_from_2016_09_19_21_30_59.png)](http://postimg.org/image/i6mit8kkz/)](https://youtu.be/p-Qi0shD78Y)
+[![ScreenShot](http://s13.postimg.org/8yuacjdiv/Screenshot_from_2016_09_19_21_30_59.png)][(http://postimg.org/image/i6mit8kkz/)](https://youtu.be/p-Qi0shD78Y)
 
 
 ### Milestones (and to-do list)
