@@ -27,7 +27,7 @@ This proof of concept logs into a Gmail account, enters the inbox, starting at t
 
 Quick tour of the files:
 
-[![ScreenShot](http://s14.postimg.org/f3l5klii9/Screenshot_from_2016_09_19_21_30_37.png)][(http://postimg.org/image/p0w6dnq3x/)](https://youtu.be/HqinRVduHdA)
+[![Alt text for your video](http://img.youtube.com/vi/p-Qi0shD78Y/0.jpg)](http://www.youtube.com/watch?v=p-Qi0shD78Y)
 
 Fetching, matching, and responding to an email:
 
