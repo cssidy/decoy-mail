@@ -64,6 +64,6 @@ What happens if spammers see this and device more innovative, effective ways of 
 
 ### Get involved
 
-If you would like to get involved, be it design or development, please contact me, Cassidy.
+If you would like to get involved, please contact me, Cassidy.
 
 
