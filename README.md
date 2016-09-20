@@ -31,7 +31,7 @@ Quick tour of the files:
 
 Fetching, matching, and responding to an email:
 
-[![ScreenShot](http://s13.postimg.org/8yuacjdiv/Screenshot_from_2016_09_19_21_30_59.png)](http://postimg.org/image/i6mit8kkz/)](https://youtu.be/p-Qi0shD78Y)
+[(http://s13.postimg.org/8yuacjdiv/Screenshot_from_2016_09_19_21_30_59.png)](http://postimg.org/image/i6mit8kkz/)](https://youtu.be/p-Qi0shD78Y)
 
 
 ### Milestones (and to-do list)
