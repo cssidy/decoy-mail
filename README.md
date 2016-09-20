@@ -25,6 +25,8 @@ This idea is not necessarily new. Check out scam-baiting, a popular computer ner
 
 This proof of concept logs into a Gmail account, enters the inbox, starting at the first email looks through the list, fetches the first email it finds with a spam keyword, then composes and sends a new email to the sender of the spam.
 
+<IMG src="https://youtu.be/HqinRVduHdA">
+
 ### Milestones (and to-do list)
 
 - [x] ~~Flow chart~~
