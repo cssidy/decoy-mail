@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Decoy Mail by cssidy</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Decoy Mail</h1>
+        <p>Diverting today&#39;s spam, preventing tomorrow&#39;s spam.</p>
+
+        <p class="view"><a href="https://github.com/cssidy/decoy-mail">View the Project on GitHub <small>cssidy/decoy-mail</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/cssidy/decoy-mail/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/cssidy/decoy-mail/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/cssidy/decoy-mail">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="decoy-mail" class="anchor" href="#decoy-mail" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Decoy Mail</h1>
+
+<h4>
+<a id="diverting-todays-spam-preventing-tomorrows-spam" class="anchor" href="#diverting-todays-spam-preventing-tomorrows-spam" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Diverting today's spam, preventing tomorrow's spam.</h4>
+
+<h3>
+<a id="what-issue-does-decoy-mail-address" class="anchor" href="#what-issue-does-decoy-mail-address" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What issue does Decoy Mail address?</h3>
+
+<p>The spam problem.</p>
+
+<h3>
+<a id="what-is-the-solution" class="anchor" href="#what-is-the-solution" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What is the solution?</h3>
+
+<p>Decoy Mail is spam prevention software for ISP's mailservers and email-clients. Decoy Mail prevents spam by employing autonomous, distributed, and intelligent software agents to engage with spammers and flood their servers with convincingly gullible (but false) leads. Ultimately, this wastes spammers' time, induces spammer frustration, reduces spammers' motivation to spam, and render careers in spamming unprofitable to pursue. Decoy Mail prevents future spam.</p>
+
+<h3>
+<a id="about-this-software" class="anchor" href="#about-this-software" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About this software</h3>
+
+<p>Decoy Mail is written in Python 3.5 with PyCharm Community Edition. This version is designed to log into Gmail mail servers. It requires an Internet connection and Gmail account and credentials to run. I am trying to avoid 3rd party libraries/APIs as much as possible. Eventually this software will have to be tailored to run on diverse systems, communicating with other diverse systems with their own unique configurations (which may be different than Google's).</p>
+
+<p>This idea is not necessarily new. Check out scam-baiting, a popular computer nerd hobby on the <a href="http://www.419eater.com/">419 Eater Forums</a> for an understanding of what this software is trying to automate. And, check out this disbanded Perl project of a similar nature, <a href="http://www.autobait.com/">Autobait</a>.</p>
+
+<h3>
+<a id="flow-chart" class="anchor" href="#flow-chart" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Flow chart</h3>
+
+<p><a href="http://postimg.org/image/d80khhncl/"><img src="http://s10.postimg.org/4czq6yyk9/flow_chart.png" alt="flow chart.png"></a></p>
+
+<h3>
+<a id="video-demonstration" class="anchor" href="#video-demonstration" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Video demonstration</h3>
+
+<p>This proof of concept logs into a Gmail account, enters the inbox, starting at the first email looks through the list, fetches the first email it finds with a spam keyword, then composes and sends a new email to the sender of the spam.</p>
+
+<p>Quick tour of the files:</p>
+
+<p><a href="http://www.youtube.com/watch?v=HqinRVduHdA"><img src="http://img.youtube.com/vi/HqinRVduHdA/0.jpg" alt="Alt text for your video"></a></p>
+
+<p>Fetching, matching, and responding to an email:</p>
+
+<p><a href="http://www.youtube.com/watch?v=p-Qi0shD78Y"><img src="http://img.youtube.com/vi/p-Qi0shD78Y/0.jpg" alt="Alt text for your video"></a></p>
+
+<h3>
+<a id="milestones-and-to-do-list" class="anchor" href="#milestones-and-to-do-list" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Milestones (and to-do list)</h3>
+
+<ul>
+<li>[x] <del>Flow chart</del>
+</li>
+<li>[x] <del>Proof of concept</del>
+</li>
+<li>[ ] Obfuscate bot's sent email meta data</li>
+<li>[ ] Fine tune SMTP email's appearance, make it look legitimate</li>
+<li>[ ] Compose email that is in response to the previous email (as part of a thread, not a new email)</li>
+<li>[ ] Loop through mailbox until nothing to respond to or sort, then print report</li>
+<li>[ ] Create and query database of email spam messages and appropriately gullible responses</li>
+<li>[ ] Success and failure rate tracking via the database</li>
+<li>[ ] Multiple personalities and their own set of responses</li>
+<li>[ ] Learn new conversations and responses</li>
+<li>[ ] Choose the best conversations based on previous conversation situations</li>
+<li>[ ] Attach images to emails if requested</li>
+<li>[ ] Have VoIP conversations with spammers with pre-recorded audio clips</li>
+<li>[ ] Automatically DDoS links found inside email spam messages</li>
+<li>[ ] Create a software tailored for mailservers (Linux, considering it powers most of the Internet?) or email clients (Gmail gadget? Thunderbird plugin? Outlook Ad-in?)</li>
+<li>[ ] Test software</li>
+<li>[ ] Collect statistics</li>
+</ul>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/cssidy">cssidy</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
