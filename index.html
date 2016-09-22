@@ -48,57 +48,6 @@
 <a id="why" class="anchor" href="#why" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Why?</h3>
 
 <p>At this point in time we have systems that are very good at recognizing spam. However, most spam-fighting methods in use today are passive in comparison to Decoy Mail's approach; they rely on Bayesian filtering to remove spam mail that has already been successfully delivered. This is inefficient because it doesn't stop the root motivation, that 5 out of 100,000 emails (that take only an hour, maybe $100 and little thought to send) will slip through the statistical filters and hook a gullible victim and their credit card. Sad but true, that's pretty good odds of success for such a small investment. Shell takes it a step further: what happens if we shift those odds...say, 30 gullible, very "human" victims respond? Or 100? Or 300? or 100,000? How will the spammer know who to pursue? They will become confused, frustrated, and exhausted. There will be no reason to spam anymore because it will take more time and energy to find the victim than it's worth.</p>
-
-<h3>
-<a id="about-this-software" class="anchor" href="#about-this-software" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About this software</h3>
-
-<p>Decoy Mail is written in Python 3.5 with PyCharm Community Edition. This version is designed to log into Gmail mail servers. It requires an Internet connection and Gmail account and credentials to run. I am trying to avoid 3rd party libraries/APIs as much as possible. Eventually this software will have to be tailored to run on diverse systems, communicating with other diverse systems with their own unique configurations (which may be different than Google's).</p>
-
-<h3>
-<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h3>
-
-<h3>
-<a id="flow-chart" class="anchor" href="#flow-chart" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Flow chart</h3>
-
-<p><a href="http://postimg.org/image/d80khhncl/"><img src="http://s10.postimg.org/4czq6yyk9/flow_chart.png" alt="flow chart.png"></a></p>
-
-<h3>
-<a id="video-demonstration" class="anchor" href="#video-demonstration" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Video demonstration</h3>
-
-<p>This proof of concept logs into a Gmail account, enters the inbox, starting at the first email looks through the list, fetches the first email it finds with a spam keyword, then composes and sends a new email to the sender of the spam.</p>
-
-<p>Quick tour of the files:</p>
-
-<p><a href="http://www.youtube.com/watch?v=HqinRVduHdA"><img src="http://img.youtube.com/vi/HqinRVduHdA/0.jpg" alt="Alt text for your video"></a></p>
-
-<p>Fetching, matching, and responding to an email:</p>
-
-<p><a href="http://www.youtube.com/watch?v=p-Qi0shD78Y"><img src="http://img.youtube.com/vi/p-Qi0shD78Y/0.jpg" alt="Alt text for your video"></a></p>
-
-<h3>
-<a id="milestones-and-to-do-list" class="anchor" href="#milestones-and-to-do-list" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Milestones (and to-do list)</h3>
-
-<ul>
-<li>[x] <del>Flow chart</del>
-</li>
-<li>[x] <del>Proof of concept</del>
-</li>
-<li>[ ] Obfuscate bot's sent email meta data</li>
-<li>[ ] Fine tune SMTP email's appearance, make it look legitimate</li>
-<li>[ ] Compose email that is in response to the previous email (as part of a thread, not a new email)</li>
-<li>[ ] Loop through mailbox until nothing to respond to or sort, then print report</li>
-<li>[ ] Create and query database of email spam messages and appropriately gullible responses</li>
-<li>[ ] Success and failure rate tracking via the database</li>
-<li>[ ] Multiple personalities and their own set of responses</li>
-<li>[ ] Learn new conversations and responses</li>
-<li>[ ] Choose the best conversations based on previous conversation situations</li>
-<li>[ ] Attach images to emails if requested</li>
-<li>[ ] Have VoIP conversations with spammers with pre-recorded audio clips</li>
-<li>[ ] Automatically DDoS links found inside email spam messages</li>
-<li>[ ] Create a software tailored for mailservers (Linux, considering it powers most of the Internet?) or email clients (Gmail gadget? Thunderbird plugin? Outlook Ad-in?)</li>
-<li>[ ] Test software</li>
-<li>[ ] Collect statistics</li>
-</ul>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/cssidy">cssidy</a></p>
