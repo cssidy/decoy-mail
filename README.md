@@ -15,8 +15,6 @@ Decoy Mail is spam prevention software for ISP's mailservers and email-clients. 
 
 Decoy Mail is written in Python 3.5 with PyCharm Community Edition. This version is designed to log into Gmail mail servers. It requires an Internet connection and Gmail account and credentials to run. I am trying to avoid 3rd party libraries/APIs as much as possible. Eventually this software will have to be tailored to run on diverse systems, communicating with other diverse systems with their own unique configurations (which may be different than Google's).
 
-This idea is not necessarily new. Check out scam-baiting, a popular computer nerd hobby on the [419 Eater Forums](http://www.419eater.com/) for an understanding of what this software is trying to automate. And, check out this disbanded Perl project of a similar nature, [Autobait](http://www.autobait.com/).
-
 ### Flow chart
 
 [![flow chart.png](http://s10.postimg.org/4czq6yyk9/flow_chart.png)](http://postimg.org/image/d80khhncl/)
