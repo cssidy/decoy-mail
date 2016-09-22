@@ -5,7 +5,7 @@
 
 ### What issue does Decoy Mail address?
 
-The Internet as a living organism. It's like a lichen; a symbiotic relationship between hardware, software, information and humans. Spam clogs up its functioning, making servers have to process a bulk of data that nobody wants. This results in wasted electricity and physical storage for ISPs and, for the end user, time wasted being annoyed and having to further filter spam, empty spam boxes, and the risk of falling prey to malicious, unintentionally downloaded software and scams. The Internet would be a healthier organism without spam, and now we can build intelligent software agents to function as a protective immune system for it.
+Imagine the Internet as a living organism. It's like a lichen; a symbiotic relationship between hardware, software, information and humans. Spam clogs up its functioning, making servers have to process a bulk of data that nobody wants. This results in wasted electricity and physical storage for ISPs and, for the end user, time wasted being annoyed and having to further filter spam, empty spam boxes, and the risk of falling prey to malicious, unintentionally downloaded software and scams. The Internet would be a healthier organism without spam, and now we can build intelligent software agents to function as a protective immune system for it.
 
 ### What is the solution?
 
