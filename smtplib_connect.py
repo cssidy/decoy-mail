@@ -22,13 +22,8 @@ def smtp_connection(verbose=True):
     def compose_email(email_result):
         sender = email_account
         to = from_
-        # why is this breaking into single characters with a comma between each?
-        # need to remove the From: that is at the beginning of from_
         subject = ('Re: ' + subject_)
-        # this is not displaying, empty subject line
-        # clean this up, Subject: Re: Subject: Want to go to the beach Sunday?
         body = "Yes, that would be delightful."
-        # why is there a space at the beginning?
 
         email_text = """\
             From: %s
