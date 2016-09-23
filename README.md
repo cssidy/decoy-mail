@@ -5,6 +5,8 @@
 
 ### Usage
 
+Create a `_config.py` file with a dictionary of your email account credentials (this is .gitignored) such as HOSTNAME, USERNAME and PASSWORD keys.
+
 Note: Decoy Mail is written in Python 3.5. This version is designed to work with a Gmail inbox. It requires an Internet connection and Gmail account and credentials to run. I am trying to avoid 3rd party libraries/APIs as much as possible. Eventually this software will have to be tailored to run on diverse systems, communicating with other diverse systems with their own unique configurations (which may be different than Google's). Hence, I am not using solely Google's Gmail API.
 
 ### Flow chart
