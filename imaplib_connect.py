@@ -28,21 +28,6 @@ def open_connection(verbose=True):
     server.login(email_account, password)
     return server
 
-    # # Login to our account
-    # email_account = ('xxxxxx@gmail.com')
-    # # password = input('Enter password:')
-    # password = ('xxxxxx')
-    # if verbose:
-    #     print('Logging in as', email_account,'...')
-    #     try:
-    #         connection.login(email_account, password)
-    #         print('Success.')
-    #     except Exception as err:
-    #         print('ERROR:', err)
-    #     return connection
-
-
-
 # prints results of def open_connection
 if __name__ == '__main__':
     with open_connection(verbose=True) as c:
