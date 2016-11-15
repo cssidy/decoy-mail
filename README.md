@@ -3,11 +3,11 @@
 
 #### Learn more about Doppelganger Mail's mission at [http://cassidybrooke.net/doppelganger-mail/](http://cassidybrooke.net/doppelganger-mail/).
 
-### Usage
+### Configuration & Usage
 
-Create a `_config.py` file with a dictionary of your email account credentials (this is .gitignored) such as HOSTNAME, USERNAME and PASSWORD keys.
+Modify your `_config.py` file's dictionary with your email account credentials (this is .gitignored). For example IMAP_HOSTNAME may become imap.gmail.com, SMTP_HOSTNAME may become smtp.gmail.com, USERNAME example@gmail.com and PASSWORD holymackerel keys.
 
-Note: Doppelganger Mail is written in Python 3.5. This version is designed to work with a Gmail inbox. It requires an Internet connection and Gmail account and credentials to run. I am trying to avoid 3rd party libraries/APIs as much as possible. Eventually this software will have to be tailored to run on diverse systems, communicating with other diverse systems with their own unique configurations (which may be different than Google's). Hence, I am not using solely Google's Gmail API.
+Note: Doppelganger Mail is written in Python 3.5. This version is designed to work with a Gmail inbox. It requires an Internet connection and Gmail account and credentials to run. You will have to [turn off 2-Step Verification](https://support.google.com/accounts/answer/1064203?hl=en) to allow the email bot to access your Inbox, otherwise Google will block the action. I am trying to avoid 3rd party libraries/APIs as much as possible. Eventually this software will have to be tailored to run on diverse systems, Thunderbird, Outlook, etc. Hence, I am not using solely Google's Gmail API.
 
 ### Flow chart
 
@@ -50,5 +50,5 @@ Note: this is old, from when I was calling the project the poor name of "Shell" 
 - [ ] Create a software tailored for mailservers (Linux, considering it powers most of the Internet?) or email clients (Gmail gadget? Thunderbird plugin? Outlook Ad-in?)
 - [ ] Create a Javascript extension for Thunderbird? Extend the GUI to show spam-hunt count, or spams-in-progress statistics, or simply make it invisible to end users.
 - [ ] Test software
-- [ ] Collect statistics
+- [ ] Collect statistics of usage and success rates
 
