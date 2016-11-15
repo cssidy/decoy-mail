@@ -1,7 +1,7 @@
 # Doppelganger Mail
 #### Diverting today's spam, preventing tomorrow's spam.
 
-#### Learn more about Doppelganger Mail's mission at [http://cassidybrooke.net/doppelganger-mail/](http://cassidybrooke.net/doppelganger-mail/).
+##### Learn more about Doppelganger Mail's mission at [http://cassidybrooke.net/doppelganger-mail/](http://cassidybrooke.net/doppelganger-mail/).
 
 ### Configuration & Usage
 
