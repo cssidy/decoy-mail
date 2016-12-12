@@ -1,0 +1,160 @@
+#pseudocode
+#12/03/2015
+
+
+
+
+#login to inbox
+#this example uses gmail's servers, realistically I will be using my own
+
+import imaplib
+mail = imaplib.IMAP4_SSL('imap.gmail.com')
+mail.login('myusername@gmail.com', 'mypassword')
+mail.list()
+
+# Out: list of "folders" aka labels in gmail.
+mail.select("inbox") # connect to inbox.
+
+
+#search for mail marked spam
+#ALL is a built in keyword, what is the keyword for spam?
+
+mail.search(None, "ALL")
+ 
+ids = data[0] # data is a list.
+id_list = ids.split() # ids is a space separated string
+latest_email_id = id_list[-1] # get the latest
+ 
+result, data = mail.fetch(latest_email_id, "(RFC822)") # fetch the email body (RFC822) for the given ID
+ 
+raw_email = data[0][1] # here's the body, which is raw text of the whole email
+
+# including headers and alternate payloads
+
+#get Unique ID for each email, not its position in the inbox
+#get message ID
+#get thread ID
+#NOTE thread ID might be gmail specific, what other options are there to measure the number of scammer replies to a single solicitation/response?
+
+result, data = mail.uid('search', None, "ALL") # search and return uids instead
+latest_email_uid = data[0].split()[-1]
+result, data = mail.uid('fetch', latest_email_uid, '(RFC822)')
+raw_email = data[0][1]
+
+
+#python has a built in library called 'email' for help with formatting
+
+import email
+email_message = email.message_from_string(raw_email)
+ 
+print email_message['To']
+ 
+print email.utils.parseaddr(email_message['From']) # for parsing "Yuji Tomita" <yuji@grovemade.com>
+ 
+print email_message.items() # print all headers
+ 
+# note that if you want to get text content (body) and the email contains
+# multiple payloads (plaintext/ html), you must parse each message separately.
+# use something like the following: (taken from a stackoverflow post)
+def get_first_text_block(self, email_message_instance):
+    maintype = email_message_instance.get_content_maintype()
+    if maintype == 'multipart':
+        for part in email_message_instance.get_payload():
+            if part.get_content_maintype() == 'text':
+                return part.get_payload()
+    elif maintype == 'text':
+        return email_message_instance.get_payload()
+
+
+
+
+#spam filter?
+#even if it's not advance fee/419 scams, we could still waste their time with responses such as
+#"What attachment? It didn't come through."
+#anyhow, open emailbot.py
+
+#import email message header info, subject and body text into variables
+
+senderemail = scammer's email
+subject = email subject
+bodytext = email body text
+
+#groom bodytext to remove fluff words and condense down to tokens "keywords"
+#the NLTK contains premade functions to do this
+
+import NLTK
+stopwords.bodytext, tokenize.bodytext
+
+#for example, turn
+#"Please complete the attached form and send back to me along with your passport."
+#into:
+#('please','complete','attached','form','send','back','passport')
+#the purpose of this is to condense what could be a very bulky body of text into the core meaning
+#so as not to clog up database with "and", "if", or "buts" which will hinder pattern-matching
+
+#open MySQL database connection
+
+#pattern-matching and machine-learning (choose the best-match and highest-reply-rate response)
+
+	query for best-match to bodytext keywords in solicitation table
+		find associated response, connected via solicitationID
+			for best-match(s)
+				insert into composebody variable
+				#format text so that it looks like a nicely crafted email?
+		if thread ID is a repeat
+		#meaning the scammer has responded to the same thread with a new message
+		#what happens if scammer starts a new email?
+		and/or if email address is the same
+			insert into ResponseID response_success table (counter+1)
+			#over time, responses with the highest values will be chosen more frequently
+			#need to make variations in the responses, though, to keep the scammers from catching on
+		#add new solicitation and the chosen response to database
+		update database
+			insert bodytext into solicitations
+			insert composebody into responses table for associated responsesID, set counter to 0
+
+#import smtp library for the actual email sending function
+#import the email modules needed
+
+#compose mail
+#join together all messages which have the same ThreadID to recreate conversation
+
+msg['subject'] = 'RE: (insert subject variable)'
+msg['from'] = OnionMail server spoofed address
+msg['to'] = senderemail
+msg = MIMEtext(bodytext)
+
+#if keyword is a request for image AND bodytext is now "I have attached..."
+#include a large .DDL file that filename has been changed to .jpg
+#or a corrupted pdf scan, etc. this is for annoyance factor and stalling
+	attachment = ('passport', 'form', image', etc etc) #whatever the scammer had requested in bodytext
+
+# Here are the email package modules we'll need
+from email.mime.image import MIMEImage
+from email.mime.multipart import MIMEMultipart
+
+COMMASPACE = ', '
+
+# Create the container (outer) email message.
+msg = MIMEMultipart()
+msg['Subject'] = 'RE:(subject)'
+msg['From'] = OnionMail server spoofed email address
+msg['To'] = COMMASPACE.join(scammer)
+msg.preamble = 'Attached you will find the (attachment)'
+
+# Assume we know that the image files are all in PNG format
+for file in pngfiles:
+    # Open the files in binary mode.  Let the MIMEImage class automatically
+    # guess the specific image type.
+    fp = open(file, 'rb')
+    img = MIMEImage(fp.read())
+    fp.close()
+    msg.attach(img)
+
+#send mail
+
+s = smtplib.SMTP('localhost')
+s.sendmail(OnionMail server spoofed address.[senderemail],msg.as_string()]
+s.quit()
+
+
