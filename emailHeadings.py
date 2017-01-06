@@ -1,4 +1,4 @@
-
+#! python3
 
 unuseful_email_headings = [
     'Received:',
