@@ -1,14 +1,15 @@
 #! /usr/bin/python3
 
 import imaplib
-import configparser
-import os
+from login_credentials import gmail_credentials
+# import configparser
+# import os
 
 
 def open_connection(verbose=True):
     # Read the config file
-    config = configparser.ConfigParser()
-    config.read([os.path.expanduser('~/.pymotw')])
+    # config = configparser.ConfigParser()
+    # config.read([os.path.expanduser('~/.pymotw')])
 
     # Connect to the server
     hostname = ('imap.gmail.com')
@@ -21,9 +22,9 @@ def open_connection(verbose=True):
     email_account = ()
     password = ()
     if verbose:
-        print('Logging in as', email_account)
+        print('Logging in as', gmail_credentials.get('username', 0))
         print('\n')
-    server.login(email_account, password)
+    server.login(gmail_credentials.get('username', 0), gmail_credentials.get('password', 0))
     return server
 
 # prints results of def open_connection

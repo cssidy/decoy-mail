@@ -1,10 +1,10 @@
 #! python3
 # this file will not be uploaded to Git
 
-gmail_credentials = {'IMAP_HOSTNAME': 'imap.gmail.com',
-                     'SMTP_HOSTNAME': 'smtp.gmail.com',
-                     'USERNAME': 'example@gmail.com',
-                     'PASSWORD': 'password'}
+gmail_credentials = {'imap_hostname': 'imap.gmail.com',
+                     'smtp_hostname': 'smtp.gmail.com',
+                     'username': 'example@gmail.com',
+                     'password': 'password'}
 
 yahoo_credentials = {}
 
