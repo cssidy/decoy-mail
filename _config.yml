@@ -1,0 +1,8 @@
+title: Doppelganger Mail
+description: Diverting today's spam, preventing tomorrow's spam.
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-minimal
+
+gems:
+  - jekyll-mentions
