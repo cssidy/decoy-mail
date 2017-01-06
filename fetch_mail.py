@@ -1,9 +1,9 @@
 #! /usr/bin/python3
 
 import imaplib
-import imaplib_connect
+import imap_connect
 
-with imaplib_connect.open_connection() as c:
+with imap_connect.open_connection() as c:
     c.select('INBOX')
     typ, [msg_ids] = c.search(None, 'TEXT', 'Sunday')
     for num in msg_ids.split():
@@ -20,4 +20,4 @@ with imaplib_connect.open_connection() as c:
                 # Use this for debugging if the raw_email is diff't length
 
 
-#close imap server connection
+# close imap server connection

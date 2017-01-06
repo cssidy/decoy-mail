@@ -1,6 +1,6 @@
 #! python3
 
-unuseful_email_headings = [
+useless_email_headings = [
     'Received:',
     'X-Received:',
     'Return-Path:',

@@ -1,7 +1,7 @@
 #! /usr/bin/python3
 
 import smtplib
-from imaplib_fetch_rfc822 import from_, subject_
+from fetch_mail import from_, subject_
 from pattern_match import email_result
 
 if email_result is True:

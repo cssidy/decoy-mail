@@ -1,6 +1,6 @@
 #! /usr/bin/python3
 
-from imaplib_fetch_rfc822 import body_
+from fetch_mail import body_
 
 email_result = ()
 keywords1 = 'funds'

@@ -18,10 +18,8 @@ def open_connection(verbose=True):
     server = imaplib.IMAP4_SSL(hostname)
 
     # Login to our account
-    # ENTER YOUR EMAIL
-    email_account = ('xxxxxx@gmail.com')
-    # ENTER YOUR PASSWORD
-    password = ('xxxxx')
+    email_account = ()
+    password = ()
     if verbose:
         print('Logging in as', email_account)
         print('\n')
