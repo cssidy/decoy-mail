@@ -1,6 +1,6 @@
 # Doppelganger Mail
 
-### Diverting today's spam, preventing tomorrow's spam.
+#### Diverting today's spam, preventing tomorrow's spam.
 
 
 
