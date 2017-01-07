@@ -1,8 +1,15 @@
 #! /usr/bin/python3
 
-# from imap_connect import start_imap_connection
 
-# initiate function call for start_imap_connection
+# imap_server.select()
+# typ, data = imap_server.search([])
+# for num in data[0].split():
+#     typ, data = imap_server.fetch(num, '(RFC822)')
+#     print('Message %s\n%s\n' % (num, data[0][1]))
+# imap_server.close()
+# imap_server.logout()
+# print('\nLogged out.')
+
 
 # search for emails to bait that are in inbox and spam
 
