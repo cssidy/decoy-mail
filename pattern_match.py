@@ -18,3 +18,5 @@ from imap_connect import fetch_dictionary
 
 # TODO: prepare dictionary's key's values for smtp server (to, subject, from, body)
 
+# TODO: open a text file and print dictionary to it
+
