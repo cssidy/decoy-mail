@@ -3,8 +3,8 @@
 
 gmail_credentials = {'imap_hostname': 'imap.gmail.com',
                      'smtp_hostname': 'smtp.gmail.com',
-                     'username': 'example@gmail.com',
-                     'password': 'password'}
+                     'username': 'the5thbit@gmail.com',
+                     'password': 'pimpdaddy2014'}
 
 yahoo_credentials = {}
 

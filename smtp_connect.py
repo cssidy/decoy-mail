@@ -1,54 +1,35 @@
 #! /usr/bin/python3
 
 import smtplib
-from fetch_mail import from_, subject_
-from pattern_match import email_result
+from login_credentials import gmail_credentials
 
-if email_result is True:
-    print("TRUE")
+# login to smtp server
+def start_imap_connection():
 
-def smtp_connection(verbose=True):
-    # ENTER YOUR EMAIL
-    email_account = 'xxxxx@gmail.com'
-    # ENTER YOUR PASSWORD
-    password = 'xxxxx'
-    server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
-    server.ehlo()
-    print('Logging in as', email_account)
-    server.login(email_account, password)
-    print('Log in success.')
+    # connect to smtp server
     print('\n')
+    smtp_server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
+    smtp_server.ehlo()
+    # log in to email account
+    print('Logging in to SMTP server...')
+    smtp_server.login(gmail_credentials.get('address', 0), gmail_credentials.get('password', 0))
+    print('Log in success.')
 
-    def compose_email(email_result):
-        sender = email_account
-        to = from_
-        subject = ('Re: ' + subject_)
-        body = "Yes, that would be delightful."
+# TODO: open database
+    email_addresses = ['1@gmail.com', '2@gmail.com', '3@gmail.com', '4@gmail.com']
 
-        email_text = """\
-            From: %s
-            To: %s
-            Subject: %s
+# TODO: bring in variables from pattern_match.py (to, subject, from, body)
 
-            %s
-            """ % (sender, ", ".join(to), subject, body)
+# TODO: send mail
 
-        try:
-            server.sendmail(sender, to, email_text)
-            server.close()
+    for email_address in email_addresses:
+        content = "Subject: Test\nInitial test"
+        print('Sending email to %s...' % email_address)
 
-            print('Email delivered.')
-
-        except:
-            print('Unable to send email.')
-
-    compose_email(email_result)
-
-    return server
-    server.logout()
-
-# prints results of def open_connection
-if __name__ == '__main__':
-    with smtp_connection(verbose=True) as c:
-        print(c)
+        send_mail_status = smtp_server.sendmail(gmail_credentials.get('address', 0), email_address, content)
+        if send_mail_status != {}:
+            print('There was a problem sending email to %s: %s' % (email_address, send_mail_status))
+        else:
+            print('Success.')
+    smtp_server.quit()
 
