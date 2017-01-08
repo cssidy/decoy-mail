@@ -30,7 +30,7 @@ start_imap_connection()
 # print('\nLogged out.')
 
 # TODO: fetch content from emails (from, subject, body) and store in a dictionary of some sort
-# fetched_dictionary =
+# fetch_dictionary = {}
 
 # TODO: close imap server connection
 # imap_server.quit()
