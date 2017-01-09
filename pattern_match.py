@@ -3,9 +3,11 @@
 # TODO: from imap server (subject, from, body) import fetch_dictionary
 from imap_connect import fetch_dictionary
 
-# TODO: isolate keywords (funds, trust, lonely, facebook, link, etc.)
+# TODO: isolate keywords with (funds, trust, lonely, facebook, link, etc.)
+# split()/strip()?
 
 # TODO: determine what type of spam it is (financial, romance, click bait, etc.)
+# list comprehension/filter?
 
 # TODO: determine immediate action based on above ^ and keywords
 # DDoS link
