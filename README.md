@@ -1,8 +1,6 @@
 # Doppelganger Mail
 #### Diverting today's spam, preventing tomorrow's spam.
 
-##### Learn more about Doppelganger Mail's mission at [http://cassidybrooke.net/doppelganger-mail/](http://cassidybrooke.net/doppelganger-mail/).
-
 ### Configuration & Usage
 
 Note: Doppelganger Mail is written in Python 3.5. This version is designed to work with a Gmail inbox.
