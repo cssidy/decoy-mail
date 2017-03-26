@@ -10,8 +10,6 @@ email bot to access your Inbox, otherwise Google will block the action. I am try
 libraries/APIs as much as possible. Eventually this software will have to be tailored to run on
 diverse systems, Thunderbird, Outlook, etc. Hence, I am not using solely Google's Gmail API.
 
-### Flow chart
-
 
 
 
