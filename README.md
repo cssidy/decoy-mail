@@ -1,7 +1,7 @@
 # Doppelganger Mail
 #### Diverting today's spam, preventing tomorrow's spam.
 
-Doppelganger Mail acts as your spam-fighting email assistant. It has a mischevious and vengeful personality. It uses social engineering and digital aggression to thwart spammers and waste their time, ultimately making their chances of spamming less favorable.
+Doppelganger Mail acts as your spam-fighting email assistant. It has a mischievous and vengeful personality. It uses social engineering and digital aggression to thwart spammers and waste their time, ultimately making their chances of spamming less favorable.
 
 This is a great compliment to modern, passive algorithm-based methods of filtering spam. As it stands, this code must run in the terminal continuously and be synced to a single Gmail account.
 
